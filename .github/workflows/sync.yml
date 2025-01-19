@@ -29,15 +29,22 @@ jobs:
         python -m pip install --upgrade pip
         pip install pandas requests pyyaml
     - name: Run script
-      run: python ../main.py
-      working-directory: ./rule/
+      run: python main.py
+      working-directory: .  # 根目录下运行脚本
     - name: Commit and push config.json
       run: |
         git config --global user.email "action@github.com"
         git config --global user.name "GitHub Action"
+
+        # 检查并添加 .txt 文件
+        if ls ./rule/*.txt 1> /dev/null 2>&1; then
+          git add ./rule/*.txt
+        else
+          echo "No .txt files to add."
+        fi
+
         git add ./rule/*.json
         git add ./rule/*.srs
-        git add ./rule/*.txt
 
         # 检查是否有文件被修改
         if git diff --staged --quiet; then
