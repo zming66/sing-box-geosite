@@ -6,11 +6,6 @@
       ]
     },
     {
-      "domain_keyword": [
-        "baidu"
-      ]
-    },
-    {
       "domain_regex": [
         ".+\.ap-bangkok\.tencentcos\.(cn|com(\.cn)?)$",
         ".+\.ap-hongkong\.tencentcos\.(cn|com(\.cn)?)$",
