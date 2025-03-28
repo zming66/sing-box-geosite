@@ -1,2 +1,3 @@
 https://raw.githubusercontent.com/zming66/zsm/refs/heads/main/Direct.list
 https://raw.githubusercontent.com/zming66/zsm/refs/heads/main/Proxy.list
+https://raw.githubusercontent.com/zming66/zsm/refs/heads/main/DA.list
