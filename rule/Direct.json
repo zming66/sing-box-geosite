@@ -2,17 +2,13 @@
   "rules": [
     {
       "domain_suffix": [
-        "apple.com",
         "cn.bing.com",
         "dns.alidns.com",
         "doh.pub",
-        "downloads.immortalwrt.org",
-        "icloud.com",
         "lanzov.com",
         "ming.us.kg",
         "smtp.qq.com",
-        "time.windows.com",
-        "upgrade.mikrotik.ltd"
+        "time.windows.com"
       ]
     },
     {
