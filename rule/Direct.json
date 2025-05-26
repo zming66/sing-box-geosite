@@ -1,6 +1,12 @@
 {
   "rules": [
     {
+      "domain_keyword": [
+        "baidu",
+        "zsm.us.kg"
+      ]
+    },
+    {
       "domain_suffix": [
         "cn.bing.com",
         "dns.alidns.com",
@@ -10,7 +16,7 @@
         "smtp.qq.com",
         "time.windows.com",
         "upgrade.mikrotik.ltd",
-        "zsm.us.kg"
+        "us.kg"
       ]
     },
     {
