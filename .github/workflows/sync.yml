@@ -1,10 +1,10 @@
 name: Config Update
 
-on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
-  schedule:
+#on:
+ # push:
+  #  branches: [ main ]
+ # workflow_dispatch:
+  #schedule:
   #  - cron: '0 12 * * *'
 
 jobs:
