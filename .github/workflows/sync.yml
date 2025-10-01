@@ -51,6 +51,21 @@ jobs:
           pip install pandas requests pyyaml
         fi
 
+    # 下载 AdGuard 规则
+    - name: Download content
+      run: |
+        URL="https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt"
+        OUTPUT_FILE="./rule/adservers.txt"
+
+        mkdir -p ./rule
+        curl -L $URL -o $OUTPUT_FILE
+
+        if [ -f "$OUTPUT_FILE" ]; then
+          echo "下载成功: $OUTPUT_FILE"
+        else
+          echo "下载失败"
+          exit 1
+        fi
 
     # 转换规则为 sing-box 格式
     - name: Convert AdGuard DNS Filter to sing-box rule set
